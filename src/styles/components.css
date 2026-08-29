@@ -431,6 +431,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Bias toward the top so the face/upper body stay in frame on any ratio */
+  object-position: center 18%;
 }
 
 .portrait__placeholder {
@@ -1611,6 +1613,18 @@ a.footer__social:hover {
   }
   .float-card--2 {
     right: -2%;
+  }
+
+  /* On small phones the floating cards sit too close to the screen edges;
+     hide them so the portrait (and the face) stay the clear focus. */
+  @media (max-width: 560px) {
+    .float-card,
+    .portrait__bracket--open {
+      display: none;
+    }
+    .portrait {
+      width: min(300px, 76vw);
+    }
   }
 }
 
