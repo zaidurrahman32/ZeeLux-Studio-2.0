@@ -1,0 +1,45 @@
+/* ============================================================
+   ZEELUX STUDIO — DESIGN TOKENS
+   ============================================================ */
+:root {
+  /* Color palette — dark, technical, premium */
+  --bg: #07070c;
+  --bg-soft: #0b0b13;
+  --surface: rgba(255, 255, 255, 0.028);
+  --surface-2: rgba(255, 255, 255, 0.045);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  --text: #f2f2f7;
+  --text-soft: #a9a9bd;
+  --text-dim: #6d6d83;
+
+  --accent: #8b7cf6;
+  --accent-2: #22d3ee;
+  --accent-soft: rgba(139, 124, 246, 0.14);
+  --accent-glow: rgba(139, 124, 246, 0.35);
+  --cyan-glow: rgba(34, 211, 238, 0.22);
+
+  --grad: linear-gradient(120deg, #a494ff 0%, #8b7cf6 45%, #22d3ee 100%);
+  --grad-soft: linear-gradient(120deg, rgba(139, 124, 246, 0.16), rgba(34, 211, 238, 0.10));
+
+  /* Typography */
+  --font-display: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+
+  /* Shape & depth */
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 18px 50px -22px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 42px -6px var(--accent-glow);
+
+  /* Layout */
+  --nav-h: 72px;
+  --container: 1160px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
